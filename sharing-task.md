@@ -63,20 +63,20 @@ Divide students into small groups of 3–5. Each group will be responsible for w
 
 ```bash
 npm test
-```
 
-## 📄 Sample Test Code (Students Will Write)
 
-```js
-test("applies a valid discount rate", () => {
-    expect(calculateDiscount(100, 0.1)).toBe(90);
-});
+##############here is my observation for this
 
-test("handles an invalid discount rate gracefully", () => {
-    expect(calculateDiscount(100, -0.1)).toBe(null);
-});
-
-test("handles edge case with price of 0", () => {
-    expect(calculateDiscount(0, 0.2)).toBe(0);
-});
+Highlight Challenges and Resolutions:
+Example challenges:
+Challenge: sortInventory didn’t handle case-sensitive names correctly.
+Resolution: Added a test for name sorting and updated the implementation to use .toLowerCase() for comparisons.
+Challenge: Tests failed due to incorrect assumptions about method outputs.
+Resolution: Reviewed method requirements and updated tests to match expected behavior.
+Document how the group collaborated to resolve issues (e.g., pair programming, PR reviews).
+Note Interesting Bugs:
+Example bugs:
+calculateDiscount returned negative prices for discounts > 100%.
+filterProducts didn’t handle null categories, causing crashes.
+Explain how tests uncovered these bugs and how they were fixed.
 ```
